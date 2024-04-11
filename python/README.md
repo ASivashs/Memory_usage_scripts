@@ -20,12 +20,12 @@ chmod +x ./memory_control.py
 
 ## Usage
 
-To run the script with default parameters (80% of memory and http://127.0.0.1:8080/reports), use the following command:
+To run the script with default parameters (80% of memory usage and http://127.0.0.1:8080/reports as the request url), use the following command:
 ```
 python3 memory_control.py
 ```
 
-To specify the memory usage and request URL, use the following command:
+To specify a custom memory usage percentage and request URL, use the following command:
 ```
 python3 memory_control.py -m [memory usage percentage, e.g. 30, 40] -r [url]
 ```
@@ -33,7 +33,7 @@ python3 memory_control.py -m [memory usage percentage, e.g. 30, 40] -r [url]
 
 ## Help
 
-To get help, run the script with the following command:
+For additional information and options, run the script with the following command:
 ```
 python3 memory_control.py --help
 ```

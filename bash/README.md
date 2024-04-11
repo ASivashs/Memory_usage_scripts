@@ -28,7 +28,7 @@ yum install curl
 
 ## Usage
 
-To run the script with default parameters (80% of memory and http://127.0.0.1:8080/reports), use the following command:
+To run the script with default parameters (80% of memory usage and http://127.0.0.1:8080/reports as the request url), use the following command:
 ```
 ./memory_control.sh
 ```
