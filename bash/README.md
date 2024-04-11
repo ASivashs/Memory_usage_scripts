@@ -1,8 +1,5 @@
 # Memory usage script in Bash
 
-<!-- This script is designed to monitor the memory consumption of a system and generate an alarm by sending an HTTP request to an API when the memory usage exceeds a specified threshold. -->
-
-
 ## Install 
 
 1. Clone the repository:
