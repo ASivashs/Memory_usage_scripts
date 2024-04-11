@@ -2,7 +2,7 @@
 
 
 usage_limit=80
-url="http://127.0.0.1:8080/alarm"
+url="http://127.0.0.1:8080/reports"
 
 if [[ "$1" =~ ^[0-9]+$ && $1 -le 100 ]]; then
     usage_limit=$1
