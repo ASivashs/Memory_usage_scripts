@@ -82,14 +82,14 @@ def send_request(message: dict, url: str) -> int | None:
     "--memory-usage", 
     type=float, 
     default=80., 
-    help="System memory usage in percent"
+    help="System memory usage in percent."
     )
 @click.option(
     "-r", 
     "--request-url", 
     type=str, 
     default="http://127.0.0.1:8080/reports/", 
-    help="URL of http request to api"
+    help="URL of http request to api."
     )
 def check(memory_usage: int, request_url: str):
     """
