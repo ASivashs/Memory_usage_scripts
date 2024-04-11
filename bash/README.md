@@ -23,7 +23,7 @@ Debian/Ubuntu
 ```
 apt install curl
 ```
-CentOS/Red Hat
+CentOS/Red Hat/Fedora
 ```
 yum install curl
 ```

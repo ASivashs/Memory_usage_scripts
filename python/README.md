@@ -7,7 +7,7 @@
 
 1. Clone the repository:
 ```
-git clone git@github.com:AntonioKampf/Memory-control-script-task.git
+git clone https://github.com/ASivashs/Memory_usage_scripts.git
 ```
 
 2. Install the required dependencies:
