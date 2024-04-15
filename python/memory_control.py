@@ -54,20 +54,20 @@ def send_request(message: dict, url: str) -> int | None:
     try:
         response = requests.post(url, timeout=timeout, json=message)
         response.raise_for_status()
-        logger.info("Request sent successfully. %s", message)
+        logger.info(f"Request sent successfully. {message}")
 
     except requests.Timeout as err:
-        logger.error("Timeout: %s.", err)
+        logger.error(f"Timeout: {err}.")
 
     except requests.exceptions.RequestException as err:
-        logger.error("Request exception: %s.", err)
+        logger.error(f"Request exception: {err}.")
 
     except requests.exceptions.HTTPError as err:
         status_code = err.response.status_code
-        logger.error("Http exception: %s. Status code: %i.", err, status_code)
+        logger.error(f"Http exception: {err}. Status code: {status_code}.")
 
     except Exception as err:
-        logger.error("Exception: %s.", err)
+        logger.error(f"Exception: {err}.")
 
     else:
         return response.status_code

@@ -2,3 +2,5 @@
 **/__pycache__
 *.log
 /python/server.py
+/.python-version
+/.idea
