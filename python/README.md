@@ -27,7 +27,7 @@ python3 memory_control.py
 
 To specify a custom memory usage percentage and request URL, use the following command:
 ```
-python3 memory_control.py -m [memory usage percentage, e.g. 30, 40] -r [url]
+python3 memory_control.py -n [time between iterations] -m [memory usage percentage, e.g. 30, 40] -r [url]
 ```
 
 

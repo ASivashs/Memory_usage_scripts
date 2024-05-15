@@ -89,7 +89,14 @@ def send_request(message: dict, url: str) -> int | None:
     default="http://127.0.0.1:8080/reports/",
     help="URL of http request to api.",
 )
-def check(memory_usage: int, request_url: str):
+@click.option(
+    "-s",
+    "--sleep-time",
+    type=int,
+    default=3,
+    help="Time between monitoring iterations.",
+)
+def check(memory_usage: int, request_url: str, sleep_time: int):
     """
     Monitor system memory consumption every second and generate HTTP POST
     request to specific api when memory usage exceeds a certain threshold.
@@ -99,7 +106,7 @@ def check(memory_usage: int, request_url: str):
         current_memory_usage = current_memory_info["used_percentage"]
         if current_memory_usage >= memory_usage:
             send_request(current_memory_info, request_url)
-            sleep(3)
+            sleep(sleep_time)
 
 
 if __name__ == "__main__":
