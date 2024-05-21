@@ -21,15 +21,15 @@ shared=${memory_usage[4]}
 cache=${memory_usage[5]}
 available=${memory_usage[6]}
 
-used_perentage=($(echo "$used / $total * 100" | bc -l))
-used_perentage=$(printf '%.*f\n' 0 $used_perentage)
+used_persentage=($(echo "$used / $total * 100" | bc -l))
+used_persentage=$(printf '%.*f\n' 0 $used_persentage)
 
-if [[ $usage_limit -le $used_perentage ]]; then
-    echo "Memory usage is: $used_perentage"
+if [[ $usage_limit -le $used_persentage ]]; then
+    echo "Memory usage is: $used_persentage"
 
     message="{\"total\": \"$total\", \
         \"used\": \"$used\", \
-        \"used_percentage\": \"$usage_percentage\", \
+        \"used_percentage\": \"$used_persentage\", \
         \"free\": \"$free\", \
         \"shared\": \"$shared\", \
         \"cache\": \"$cache\"}"
